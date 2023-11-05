@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOMATO CLONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <img class="zomato-img" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+        </div>
+
+        <div class="search">
+            <div class="search-box">
+                <i id="map" class="fa-solid fa-location-dot"></i>
+                <input id="search-city" type="text" placeholder="Kolkata">   
+                <i id="drop-down" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <hr>  
+
+            <div class="search-resturant">
+                <i id="mag-class" class="fa-solid fa-magnifying-glass"></i>
+                <input id="resturant" type="text" placeholder="Search for resturant,cuisin or a dish">
+            </div>  
+
+        </div>
+        
+        <div>
+            <div class="self-image">
+                <img id="self-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5U5D_cU8TJB0oo7nlRXVRBywE8CU1OexlK3f0AivE6OsoD1OCu9zPHHxczNwNI8FHzw&usqp=CAU" alt="">
+                <p id="sankha">SANKHADIP...</p>
+                <i id="drop-down2" class="fa-solid fa-chevron-down"></i>
+                <!-- <i id="drop-down2" class="fa-solid fa-caret-down"></i> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="option">
+        <div class="option-box">
+            <div class="delivery">
+                <img class="delivery-image" src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp" alt="">
+                <p>Delivery</p>
+            </div>
+        </div>
+
+        <div class="option-box">
+            <div class="delivery">
+                <img class="delivery-image" src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png" alt="">
+                <p>Dining</p>
+            </div>
+        </div>
+
+        <div class="option-box">
+            <div class="delivery">
+                <img class="delivery-image" src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png" alt="">
+                <p>Nightlife</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="filter-option">
+
+        <div class="filter">
+            <div class="filter-icon">
+                <i id="filter-icon" class="fa-solid fa-arrow-up-wide-short"></i>
+                <p class="filter2">Filter</p> 
+             </div>
+        </div>
+
+        <div class="filter">
+            <p class="filter2">Rating:4.0+</p>
+        </div>
+
+        <div class="filter">
+            <p class="filter2">Pure veg</p>
+        </div>
+
+        <div class="filter">
+             <p class="filter2">Cuishine
+                <i id="cuisine-down" class="fa-solid fa-chevron-down"></i>
+             </p>
+            </div>
+    </div>
+
+    <div class="item-list">
+        <p id="eat">Eat what makes you happy</p>
+        <div class="item1"> 
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" alt="">
+                <p class="item-name">Biryani</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png" alt="">
+                <p class="item-name">Rolls</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="">
+                <p class="item-name">Pizza</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" alt="">
+                <p class="item-name">Burger</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" alt="">
+                <p class="item-name">Thali</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="">
+                <p class="item-name">Chiken</p>
+            </div>
+
+        </div>
+
+    </div>
+        
+    <div class="item-list">
+        <p id="eat">Top brands for you</p>
+        <div class="item1"> 
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/brand_creatives/logos/3a58b67479fd290ff96996002438736e_1672389253.png?output-format=webp" alt="">
+                <p class="brand-name">WOW Momo</p>
+                <p class="item-name2">44 Min</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/brand_creatives/logos/560b209a689eefa9feb367b5d5604097_1611382952.png?output-format=webp" alt="">
+                <p class="brand-name">KFC</p>
+                <p class="item-name2">44 Min</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/brand_creatives/logos/b5068f3dfc0118b7b8a3cd0429ac953f_1696570852.png?output-format=webp" alt="">
+                <p class="brand-name">Chowman</p>
+                <p class="item-name2">44 Min</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/brand_creatives/logos/fe5db95ae85292933996d4043f600d3b_1611320738.png?output-format=webp" alt="">
+                <p class="brand-name">Arsalan</p>
+                <p class="item-name2">44 Min</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/brand_creatives/logos/f9eef3c0e4df808bd5590eefdf5c9c1d_1677580200.png?output-format=webp" alt="">
+                <p class="brand-name">Mio Amore</p>
+                <p class="item-name2">44 Min</p>
+            </div>
+
+            <div class="item">
+                <img class="item-img" src="https://b.zmtcdn.com/data/brand_creatives/logos/03ceb30dbebbf48efaf0ee5732b7773e_1629439318.png?output-format=webp" alt="">
+                <p class="brand-name">Mama mia</p>
+                <p class="item-name2">44 Min</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-list2">
+        <p id="eat">Best Food in Kolkata</p>
+        <div class="item1">
+            <div class="best-food">
+                <div class="food-image1 photo"> 
+                    <div class="parsentage">
+                        <p>20% OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/2/20825922/3063f371f310674775fb909aafc4d5ea_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Pepperz</div>
+                    <div class="rating">
+                        <div id="new">3.6</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Sandwich, Pasta, Burger, Stre...</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>34 min</p>
+                </div>
+            </div>
+
+
+            <div class="best-food">
+                <div class="food-image2 photo"> 
+                    <div class="parsentage">
+                        <p>40% OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/chains/5/21495/a7e3f83dd2c5a5d7805d0ad1270fe8e5_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Chowman</div>
+                    <div class="rating">
+                        <div id="new">4.2</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Chinese, Seafood, Sichuan...</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>34 min</p>
+                </div>
+            </div>
+
+            <div class="best-food">
+                <div class="food-image3 photo"> 
+                    <div class="parsentage">
+                        <p> ₹200 OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/chains/6/21176/3eaa34537c383cd11672dfbc8f55bd33_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Nizam's Since 1932</div>
+                    <div class="rating">
+                        <div id="new">4.2</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Biryani, North Indian, Rolls...</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>41 min</p>
+                </div>
+            </div>
+        </div>
+</div>
+
+    <div class="item-list2">
+        <div class="item1">
+            <div class="best-food">
+                <div class="food-image4 photo"> 
+                    <div class="parsentage">
+                        <p> ₹150 OFF</p>
+                    </div>
+                </div>
+                <div class="dhaba">
+                    <div class="resturant-name">Tea Junction</div>
+                    <div class="rating">
+                        <div id="new">4.3</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Tea, Shake, Beverages...</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>42 min</p>
+                </div>
+            </div>
+
+
+            <div class="best-food">
+                <div class="food-image5 photo"> 
+                    <div class="parsentage">
+                        <p> ₹125 OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/2/20712/b8d052782ea7727ff13d117b328ab08d_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Amber</div>
+                    <div class="rating">
+                        <div id="new">4.1</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">North Indian, Mughlai, Keba..</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>33 min</p>
+                </div>
+            </div>
+
+            <div class="best-food">
+                <div class="food-image6 photo"> 
+                    <div class="parsentage">
+                        <p> 50% OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/chains/3/18947213/0716b5947b013e6dc41f5defe0bb72e0_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Mughal Shahi Biryani</div>
+                    <div class="rating">
+                        <div id="new">4.2</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Biryani, North Indian, Mughl...</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>19 min</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-list2">
+        <div class="item1">
+            <div class="best-food">
+                <div class="food-image7 photo"> 
+                    <div class="parsentage">
+                        <p>60% OFF</p>
+                    </div>
+                </div>
+                <div class="dhaba">
+                    <div class="resturant-name">Burger King</div>
+                    <div class="rating">
+                        <div id="new">3.8</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Burger, Fast Food, Desserts, B...</div>
+                    <div class="rupees">₹ 100 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>39 min</p>
+                </div>
+            </div>
+
+
+            <div class="best-food">
+                <div class="food-image8 photo"> 
+                    <div class="parsentage">
+                        <p> ₹125 OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/2/20712/b8d052782ea7727ff13d117b328ab08d_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">AnnaRas - Since 1989</div>
+                    <div class="rating">
+                        <div id="new">4.4</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Gujarati, Street Food, Dessert..</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>30 min</p>
+                </div>
+            </div>
+
+            <div class="best-food">
+                <div class="food-image9 photo"> 
+                    <div class="parsentage">
+                        <p> 50% OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/chains/3/18947213/0716b5947b013e6dc41f5defe0bb72e0_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Domino's Pizza</div>
+                    <div class="rating">
+                        <div id="new">4.1</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Biryani, North Indian, Mughl...</div>
+                    <div class="rupees">₹ 250 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>19 min</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-list2">
+        <div class="item1">
+            <div class="best-food">
+                <div class="food-image10 photo"> 
+                    <div class="parsentage">
+                        <p>60% OFF</p>
+                    </div>
+                </div>
+                <div class="dhaba">
+                    <div class="resturant-name">Kasturi Restaurant</div>
+                    <div class="rating">
+                        <div id="new">4.0</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Bengali, Bangladeshi, Seafo...</div>
+                    <div class="rupees">₹ 150 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>48 min</p>
+                </div>
+            </div>
+
+
+            <div class="best-food">
+                <div class="food-image11 photo"> 
+                    <div class="parsentage">
+                        <p> ₹125 OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/2/20712/b8d052782ea7727ff13d117b328ab08d_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">NIC Ice Creams</div>
+                    <div class="rating">
+                        <div id="new">4.5</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Gujarati, Street Food, Dessert..</div>
+                    <div class="rupees">₹ 150 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>27 min</p>
+                </div>
+            </div>
+
+            <div class="best-food">
+                <div class="food-image12 photo"> 
+                    <div class="parsentage">
+                        <p> 50% OFF</p>
+                    </div>
+                </div>
+                <!-- <img src="https://b.zmtcdn.com/data/pictures/chains/3/18947213/0716b5947b013e6dc41f5defe0bb72e0_o2_featured_v2.jpg?output-format=webp" alt=""> -->
+                <div class="dhaba">
+                    <div class="resturant-name">Roll It Out</div>
+                    <div class="rating">
+                        <div id="new">3.5</div>
+                        <div><i id="star" class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+
+                <div class="dhaba2">
+                    <div class="item-type">Rolls, Chinese, Italian, Fast F...</div>
+                    <div class="rupees">₹ 150 for one</div>
+                </div>
+
+                <div class="dhaba3">
+                    <p>39 min</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="collection">
+        <div id="collection">Collections</div>
+        <div class="explore">
+            <div>
+                <p id="explore">Explore curated lists of top restaurants, cafes, pubs, and bars in Kolkata, based on trends</p>
+            </div>
+            <div>
+                <p id="explore2">All collections in Kolkata
+                   <i id="arrow" class="fa-solid fa-caret-down"></i>
+                </p>
+            </div>
+        </div>
+        <div class="collection-img">
+            <div id="facility-img">
+                <div class="facility">
+                    <div id="facility">22 Live Cricket Screening</div>
+                    <div id="facility2">21 Places
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                </div>
+            </div>
+             
+            <div id="facility-img2">
+                <div class="facility">
+                    <div id="facility">8 Newly Opened restura..</div>
+                    <div id="facility2">8 Places
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                </div>
+            </div>
+            <div id="facility-img3">
+                <div class="facility">
+                    <div id="facility">12 Great Buffets</div>
+                    <div id="facility2">12 Places
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                </div>
+            </div>
+            <div id="facility-img4">
+                <div class="facility">
+                    <div id="facility">17 Must-visit Legendary pl.</div>
+                    <div id="facility2">17 Places
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular">
+        <p class="locality">Popular localities in and around  <span>Kolkata</span></p>
+
+        <div class="area">
+            <div class="area-name">
+                  <div class="place">
+                      <p class="place-name">Park Street Area</p>
+                      <p class="quantity">170 Places</p>
+                  </div>
+                  <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">Sector 5, Salt Lake</p>
+                    <p class="quantity">226 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">Sector 1, Salt Lake</p>
+                    <p class="quantity">232 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">Ballygunge</p>
+                    <p class="quantity">172 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">Southern Avenue</p>
+                    <p class="quantity">117 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">New Town</p>
+                    <p class="quantity">766 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">Camac Street Area</p>
+                    <p class="quantity">70 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="place-name">Chinar Park</p>
+                    <p class="quantity">262 Places</p>
+                </div>
+                <div class="drop-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+
+            <div class="area-name">
+                <div class="place">
+                    <p class="see">See more</p>
+                </div>
+                <div id="drop-down3"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-option">
+        <p class="locality2">Explore options near me</p>
+
+        <div class="near-me">
+            <div class="place2">
+                <p>Popular cuisines near me</p>
+            </div>
+            <div class="drop-down4"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="near-me">
+            <div class="place2">
+                <p>Popular restaurant types near me</p>
+            </div>
+            <div class="drop-down4"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="near-me">
+            <div class="place2">
+                <p>Top Restaurant Chains</p>
+            </div>
+            <div class="drop-down4"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="near-me">
+            <div class="place2">
+                <p>Cities We Deliver To</p>
+            </div>
+            <div class="drop-down4"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="footer2">
+            <div class="footer3">
+                <div>
+                    <img class="zomato-img2" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+                </div>
+                <div class="available">
+                    <div class="india">
+                        <img class="flag" src="https://cdn.britannica.com/97/1597-050-008F30FA/Flag-India.jpg" alt="">
+                        <p class="nation">India</p>
+                        <i id="drop-down4" class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="global">
+                        <i id="global-pic" class="fa-solid fa-globe"></i>
+                        <p class="nation">English</p>
+                        <i id="drop-down4" class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-option">
+                <div>
+                    <p class="about" >ABOUT ZOMATO</p>
+                        <div class="link">
+                          <a href="">Who We Are</a>
+                          <a href="">Blog</a>
+                          <a href="">Work With Us</a>
+                          <a href="">Investor Relations</a>
+                          <a href="">Report Fruad</a>
+                          <a href="">Press Kit</a>
+                          <a href="">Contact Us</a>
+                        </div>
+                </div>
+                <div>
+                    <p class="about" >ZOMAVERSE</p>
+                    <div class="link">
+                        <a href="">Zomato</a>
+                        <a href="">Blinkit</a>
+                        <a href="">Feeding India</a>
+                        <a href="">Hyperpure</a>
+                        <a href="">Zomaland</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="about" >FOR RESTAURANTS</p>
+                        <div class="link">
+                            <a href="">Partner With Us  </a>
+                            <a href="">Apps For You </a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="about" >FOR ENTERPRISES</p>
+                        <a href="">Zomato For Enterprise</a>
+                    </div>
+                </div>
+                <div>
+                  <p class="about" >LEARN MORE</p>
+                   <div class="link">
+                      <a href="">Privacy</a>
+                      <a href="">Security</a>
+                      <a href="">Terms</a>
+                      <a href="">Sitemap</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="about" >SOCIAL LINKS</p>
+                    <div class="platfrom">
+                        <div class="platfrom-img">
+                            <i class="fa-brands fa-linkedin-in" style="color: #f1f2f4;"></i>
+                        </div>
+                        <div class="platfrom-img">
+                            <i class="fa-brands fa-instagram" style="color: #edeff2;"></i>
+                        </div>
+                        <div class="platfrom-img">
+                            <i class="fa-brands fa-twitter" style="color: #eaecf0;"></i>
+                        </div>
+                        <div class="platfrom-img">
+                            <i class="fa-brands fa-youtube" style="color: #e1e2e5;"></i>
+                        </div>
+                        <div class="platfrom-img">
+                            <i class="fa-brands fa-facebook-f" style="color: #eff1f6;"></i>
+                        </div>
+                    </div>
+                    <div class="app">
+                    <img class="download" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+                    <img class="download" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="term">
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-</p>
+               <p>2023 © Zomato™ Ltd. All rights reserved.</p>
+            </div>
+           
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html> 
