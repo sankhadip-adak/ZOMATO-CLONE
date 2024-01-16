@@ -120,6 +120,7 @@ input{
 }
 .delivery>p:hover{
     color:rgb(231, 26, 26);
+    cursor: pointer;
 }
 .filter-option{
     display: flex;
