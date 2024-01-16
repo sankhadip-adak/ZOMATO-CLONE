@@ -580,8 +580,23 @@ a{
 }
 .platfrom-img>i{
     font-size: 11px;
-    margin-left: 6px;
     margin-top: 6px;
+}
+#linkedin{
+    margin-left: 6px;
+}
+#instagram {
+    margin-left: 6px;
+}
+#twitter {
+    margin-left: 6px;
+    margin-top: 7px;
+}
+#youtube {
+    margin-left: 5px;
+}
+#facebook {
+    margin-left: 8px;
 }
 .download{
     height: 40px;
